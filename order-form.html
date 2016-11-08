@@ -23,11 +23,12 @@
   <link href="http://myjack.jackmorton.com/css/XSLTsearch.css" rel="stylesheet" type="text/css" media="screen" />
   <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/6d15bfce-7a94-433b-a977-b6463c3b06f1.css"/>
   <link type="text/css" rel="stylesheet" href="http://myjack.jackmorton.com/css/polyfill.object-fit.css" />
+  <link rel="stylesheet" href="order-form.css" media="screen" title="no title">
 
-  <script type="text/javascript" src="/scripts/jquery-1.4.2.min.js"></script>
-  <script type="text/javascript" src="/scripts/jquery-ui-1.8.6.custom.min.js"></script>
-  <script type="text/javascript" src="/scripts/jquery.jshowoff.js"></script>
-  <script type="text/javascript" src="/scripts/jquery.cookie.js"></script>
+  <script type="text/javascript" src="http://myjack.jackmorton.com/scripts/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="http://myjack.jackmorton.com/scripts/jquery-ui-1.8.6.custom.min.js"></script>
+  <script type="text/javascript" src="http://myjack.jackmorton.com/scripts/jquery.jshowoff.js"></script>
+  <script type="text/javascript" src="http://myjack.jackmorton.com/scripts/jquery.cookie.js"></script>
 
   <!-- Fancybox files -->
   <script type="text/javascript" src="/scripts/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
@@ -174,37 +175,108 @@
   <div class="grid_12">
     <div class="outerContainer">
       <h2 style="letter-spacing:-0.06em;">Jack-cessories</h2>
-      <span class="introText"><p>Order all your brand collateral here.</p></span>
+      <span class="introText"><p style="margin-bottom: 20px;">Our new Jack-cessories are here! Welcome new team members, gift Jack swag to prospects or clients, or simply show off your
+Jack pride by ordering our branded items.</p></span>
 
       <!-- begin innerContainer5 -->
       <div class="innerContainer">
 
-        <!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Jack-cessories</title>
-</head>
-<body>
+        <form class="collateral-form">
+          <article class="collateral__item">
+            <img src="http://myjack.jackmorton.com/media/1153819/usb_1_250x200.jpg" alt="">
+            <h4>USB sticks</h4>
+            <p class="collateral_item__description">Hit the road, Jack! Take your files and photos on the go with this sleek and shiny USB key.</p>
+            <p class="collateral_item___specs"><span class="spec__name">Size:</span> <span class="spec__detail">1.5" x 0.5" | 4GB</span></p>
+            <p class="collateral_item___specs"><span class="spec__name">Price:</span> <span class="spec__detail">$3.47</span></p>
+            <label for="usb-amount">
+              Number to order:
+              <input type="number" name="usb-amount">
+            </label>
+          </article>
+          <article class="collateral__item">
+            <img src="http://myjack.jackmorton.com/media/1153824/pen_1_250x200.jpg">
+            <h4>Pens</h4>
+            <p class="collateral_item__description">Capture your brilliant ideas anytime, anywhere. Works on paper, napkins, and the back of your hand.</p>
+            <p class="collateral_item___specs"><span class="spec__name">Size:</span> <span class="spec__detail">6"</span></p>
+            <p class="collateral_item___specs"><span class="spec__name">Price:</span> <span class="spec__detail">$0.98</span></p>
+            <label for="pen-amount">
+              Number to order:
+              <input type="number" name="pen-amount">
+            </label>
+          </article>
+          <article class="collateral__item">
+            <img src="http://myjack.jackmorton.com/media/1153829/notebook_1_250x200.jpg">
+            <h4>Notebooks</h4>
+            <p class="collateral_item__description">Organize your tasks, notes, goals and dreams—all in one eye-catching, orange notebook.</p>
+            <p class="collateral_item___specs"><span class="spec__name">Size:</span> <span class="spec__detail">8.5" x 5.5"</span></p>
+            <p class="collateral_item___specs"><span class="spec__name">Price:</span> <span class="spec__detail">$9.74</span></p>
+            <label for="notebook-amount">
+              Number to order
+              <input type="number" name="notebook-amount">
+            </label>
+          </article>
+          <section class="order-details">
+            <h4>Order information</h4>
+            <section class="order-information">
+              <section class="orderer-information">
+                <div class="order-field clearfix">
+                  <label for="order-name">Name</label>
+                  <input type="text" name="order-name">
+                </div>
+                <div class="order-field clearfix">
+                  <label for="order-office">Office</label>
+                  <select name="order-office">
+                    <option selected disabled>Select your office</option>
+                    <option value="boston">Boston</option>
+                    <option value="chicago">Chicago</option>
+                    <option value="detroit">Detroit</option>
+                    <option value="dubai">Dubai</option>
+                    <option value="dusseldorf">Düsseldorf</option>
+                    <option value="hong-kong">Hong Kong</option>
+                    <option value="london">London</option>
+                    <option value="los-angeles">Los Angeles</option>
+                    <option value="melbourne">Melbourne</option>
+                    <option value="new-york">New York</option>
+                    <option value="princeton">Princeton</option>
+                    <option value="san-francisco">San Francisco</option>
+                    <option value="seoul">Seoul</option>
+                    <option value="shanghai">Shanghai</option>
+                    <option value="singapore">Singapore</option>
+                    <option value="sydney">Sydney</option>
+                  </select>
+                </div>
+                <div class="order-field clearfix">
+                  <label for="order-job-number">
+                    Job #
+                  </label>
+                  <input type="text" name="order-job-number">
+                </div>
+              </section>
+              <label for="order-shipping">
+                Shipping
+              </label>
+              <div class="shipping-options">
+                <article>1 day <input type="radio" name="order-shipping" value="shipping-1-day"></article>
+                <article>2&#8211;3 days <input type="radio" name="order-shipping" value="shipping-2-day" checked></article>
+                <article>3&#8211;5 days <input type="radio" name="order-shipping" value="shipping-3-day"></article>
+              </div>
+            </section>
+            <section class="order-total">
+              <p class="total-label">Total</p>
+              <p class="total-amount">$50</p>
+              <input type="submit" value="Place order">
+            </section>
+          </section>
+        </form>
 
 
 
-<table style="width:100%">
+<!-- <table style="width:100%">
 	<tr>
     	<td style="width:33%; padding-left="">
         	<form action="mailto:sarah_shepherd@jackmorton.com?subject=Jack Morton brand collateral order" method="post" enctype="text/plain">
                 <img src="http://myjack.jackmorton.com/media/1153819/usb_1_250x200.jpg">
-				<h4>USB sticks</h4>
-                <p>Hit the road, Jack! Take your files and photos on the go with this sleek and shiny USB key.</p>
-                <label for="usb">USB amount:</label><br>
-                <input type="text" name="Number of USBs" value="# of USB sticks">
-                <br><br>
-                Email:<br>
-                <input type="text" name="mail" value="Your email">
-                <br><br>
-                Comment:<br>
-                <input type="text" name="comment" value="Comments" size="50">
-                <br><br>
+
              </form>
         </td>
 
@@ -306,11 +378,11 @@
 
     </tr>
 
-</table>
+</table> -->
 
 
 
-<a id="umbracoPreviewBadge" style="position: absolute; top: 0; right: 0; border: 0; width: 149px; height: 149px; background: url('/umbraco_client/preview/previewModeBadge.png') no-repeat;" href="/umbraco/endPreview.aspx?redir=%2f12307.aspx"><span style="display:none;">In Preview Mode - click to end</span></a></body>
+<a id="umbracoPreviewBadge" style="position: absolute; top: 0; right: 0; border: 0; width: 149px; height: 149px; background: url('/umbraco_client/preview/previewModeBadge.png') no-repeat;" href="/umbraco/endPreview.aspx?redir=%2f12307.aspx"><span style="display:none;">In Preview Mode - click to end</span></a>
 </html>
 
       </div><!-- end innerContainer -->
@@ -343,6 +415,9 @@
 <br class="clear"/>
 </div>
 
+
+
+    <script src="order-form.js" charset="utf-8"></script>
     <script type="text/javascript">
         new HelloBar('Go to: <a href="http://myjack.jackmorton.com">MyJack Home</a> <a href="http://hr.jackmorton.com">HR</a> <a href="http://myjack.jackmorton.com/marketing/home.aspx">Marketing Central</a>', {
             positioning: 'overlap',

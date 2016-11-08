@@ -1,0 +1,146 @@
+.collateral-form input[type=submit] {
+  background-color: #ff5000;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  font-size: 1rem;
+  margin: 2em 0;
+  padding: 0.5em 1em;
+}
+
+.collateral__item h4 {
+  font-size: 1.5rem;
+}
+
+.collateral_item__description {
+  margin: 1em 0 2em;
+}
+
+.collateral__item {
+  display: inline-block;
+  margin-right: 3%;
+  vertical-align: top;
+  width: calc(33% - 6%);
+}
+
+.collateral-form:nth-child(3) {
+  margin-right: 0;
+}
+
+.spec__name {
+  font-weight: bold;
+}
+
+.spec__detail {
+  float: right;
+}
+
+.collateral_item___specs {
+  margin: 1em 0;
+}
+
+.collateral__item label {
+  font-weight: bold;
+  line-height: 2.1875rem;
+}
+
+.collateral__item input {
+  box-sizing: border-box;
+  border: 2px solid #ff5000;
+  float: right;
+  text-align: right;
+  padding: 0.5rem;
+  width: 4em;
+}
+
+.collateral__item input[type=number]::-webkit-inner-spin-button,
+.collateral__item input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.order-details {
+  background-color: #e7e8e9;
+  box-sizing: border-box;
+  margin: 5rem 0 2rem;
+  padding: 1.5rem;
+  vertical-align: top;
+}
+
+.order-details section {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.order-details h4 {
+  font-size: 1.5rem;
+  margin: 0 0 1em;
+}
+
+.order-information {
+  margin-right: 5%;
+  width: 49.5%;
+}
+
+.order-information label {
+  font-weight: bold;
+  line-height: 2.6428em;
+  margin-bottom: 1em 0;
+}
+
+.orderer-information {
+  width: 100%;
+}
+
+.orderer-information label {
+  clear: left;
+  display: block;
+  float: left;
+}
+
+.orderer-information input,
+.orderer-information select {
+  box-sizing: border-box;
+  float: right;
+  font: inherit;
+  padding: 0.5rem;
+  width: 25em;
+}
+
+.shipping-options {
+  float: right;
+  text-align: right;
+}
+
+.order-field {
+  margin: 1em 0;
+}
+
+.order-details select {
+  font: inherit;
+}
+
+.order-total {
+  float: right;
+  width: 25%;
+  text-align: right;
+}
+
+.order-total label {
+  font-weight: bold;
+}
+
+.order-total article {
+  margin: 0.5em 0;
+}
+
+.total-label,
+.total-amount {
+  font-size: 1.25rem;
+}
+
+.total-label {
+  margin-top: rem;
+  font-weight: bold;
+}
