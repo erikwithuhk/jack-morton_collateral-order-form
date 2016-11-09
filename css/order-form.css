@@ -100,8 +100,7 @@
 }
 
 .orderer-information input,
-.orderer-information select {
-  -webkit-appearance: none;
+.order-office-select select {
   border: 1px solid #abafb3;
   border-radius: 0;
   box-sizing: border-box;
@@ -120,8 +119,23 @@
   margin: 1em 0;
 }
 
-.orderer-information select {
+.order-office-select {
+  background-color: #fff;
+  border: 1px solid #abafb3;
+  float: right;
+  width: 20em;
+}
+
+.order-office-select select {
+  -webkit-appearance: none;
+  background: transparent;
+  border: none;
   font: inherit;
+}
+
+.order-office-select select:disabled {
+  color: #abafb3;
+  background-color: #abafb3;
 }
 
 .order-total {
