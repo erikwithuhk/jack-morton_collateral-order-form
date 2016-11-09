@@ -101,6 +101,9 @@
 
 .orderer-information input,
 .orderer-information select {
+  -webkit-appearance: none;
+  border: 1px solid #abafb3;
+  border-radius: 0;
   box-sizing: border-box;
   float: right;
   font: inherit;
@@ -117,7 +120,7 @@
   margin: 1em 0;
 }
 
-.order-details select {
+.orderer-information select {
   font: inherit;
 }
 
