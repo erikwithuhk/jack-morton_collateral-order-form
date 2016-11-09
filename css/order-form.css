@@ -48,9 +48,12 @@
 .collateral__item input {
   box-sizing: border-box;
   border: 2px solid #ff5000;
+  font: inherit;
+  font-weight: normal;
+  line-height: 1;
   float: right;
   text-align: right;
-  padding: 0.5rem;
+  padding: 0.5em;
   width: 4em;
 }
 
