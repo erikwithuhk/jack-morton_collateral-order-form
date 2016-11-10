@@ -8,7 +8,7 @@
   <meta name="keywords" content="brand marketing"/>
   <meta name="description" content="Marketing Central"/>
   <meta name="author" content="YourName"/>
-  <link rel="shortcut icon" href="http://hr.jackmorton.com/favicon.ico" />
+  <!-- <link rel="shortcut icon" href="http://hr.jackmorton.com/favicon.ico" /> -->
   <link rel="apple-touch-icon" href="http://hr.jackmorton.com/apple-touch-icon.png" />
   <title>Jack-cessories | Brand Marketing Central</title>
   <link href="http://myjack.jackmorton.com/css/reset.css" rel="stylesheet" type="text/css" media="screen" />
@@ -22,7 +22,7 @@
   <link href="http://myjack.jackmorton.com/css/hellobar.css" rel="stylesheet" type="text/css" media="screen" />
   <link href="http://myjack.jackmorton.com/css/XSLTsearch.css" rel="stylesheet" type="text/css" media="screen" />
   <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/6d15bfce-7a94-433b-a977-b6463c3b06f1.css"/>
-  <link type="text/css" rel="stylesheet" href="http://myjack.jackmorton.com/css/polyfill.object-fit.css" />
+  <!-- <link type="text/css" rel="stylesheet" href="http://myjack.jackmorton.com/css/polyfill.object-fit.css" /> -->
   <link rel="stylesheet" href="css/order-form.css" media="screen" title="no title">
 
   <script type="text/javascript" src="http://myjack.jackmorton.com/scripts/jquery-1.4.2.min.js"></script>
@@ -31,8 +31,8 @@
   <script type="text/javascript" src="http://myjack.jackmorton.com/scripts/jquery.cookie.js"></script>
 
   <!-- Fancybox files -->
-  <script type="text/javascript" src="/scripts/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-  <link rel="stylesheet" href="/scripts/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+  <!-- <script type="text/javascript" src="/scripts/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+  <link rel="stylesheet" href="/scripts/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" /> -->
 
   <script type="text/javascript">
     $(document).ready(function() {
@@ -41,16 +41,16 @@
         $(this).val("");
       });
 
-     $("a#example1").fancybox();
-
-            $("a[rel=photo_gallery]").fancybox({
-        'transitionIn'    : 'fade',
-        'transitionOut'    : 'fade',
-        'titlePosition'   : 'inside',
-        'titleFormat'    : function(title, currentArray, currentIndex, currentOpts) {
-          return title + '<br />' + (currentIndex + 1) + ' / ' + currentArray.length;
-        }
-      });
+    //  $("a#example1").fancybox();
+     //
+    //         $("a[rel=photo_gallery]").fancybox({
+    //     'transitionIn'    : 'fade',
+    //     'transitionOut'    : 'fade',
+    //     'titlePosition'   : 'inside',
+    //     'titleFormat'    : function(title, currentArray, currentIndex, currentOpts) {
+    //       return title + '<br />' + (currentIndex + 1) + ' / ' + currentArray.length;
+    //     }
+    //   });
 
 
       $(".accordionMenuItem").click(function(event){
@@ -115,7 +115,7 @@
 
 </script>
 
-  <script type="text/javascript" src="/scripts/hellobar.js"></script>
+  <!-- <script type="text/javascript" src="/scripts/hellobar.js"></script> -->
 
   <!-- /End Google Analytics -->
 
@@ -163,7 +163,7 @@
   </div><!-- /end grid 15 -->
 
   <div class="grid_1">
-    <a href="http://jackmorton.com"><img src="/media/1042352/bm_tag_rgb.png" border="0" alt="Jack Morton" style="float:right;height:138px;" /></a>
+    <!-- <a href="http://jackmorton.com"><img src="/media/1042352/bm_tag_rgb.png" border="0" alt="Jack Morton" style="float:right;height:138px;" /></a> -->
   </div>
 </div><!-- /end container_16 -->
 
@@ -188,10 +188,11 @@ Jack pride by ordering our branded items.</p></span>
     <p class="collateral_item__description">Hit the road, Jack! Take your files and photos on the go with this sleek and shiny USB key.</p>
     <p class="collateral_item___specs"><span class="spec__name">Size</span> <span class="spec__detail">1.5" x 0.5" | 4GB</span></p>
     <p class="collateral_item___specs"><span class="spec__name">Unit price</span> <span class="spec__detail">$3.47</span></p>
-    <label for="usb-amount">
+    <label for="usb">
       Number to order
-      <input type="number" name="usb-amount" value="0">
+      <input type="number" name="usb" data-price="3.47" value="0">
     </label>
+    <p class="collateral_item___specs"><span class="spec__name">Price</span> <span class="spec__detail price usb">$0</span></p>
   </article>
   <article class="collateral__item">
     <img src="http://myjack.jackmorton.com/media/1153824/pen_1_250x200.jpg">
@@ -199,10 +200,11 @@ Jack pride by ordering our branded items.</p></span>
     <p class="collateral_item__description">Capture your brilliant ideas anytime, anywhere. Works on paper, napkins, and the back of your hand.</p>
     <p class="collateral_item___specs"><span class="spec__name">Size</span> <span class="spec__detail">6"</span></p>
     <p class="collateral_item___specs"><span class="spec__name">Unit price</span> <span class="spec__detail">$0.98</span></p>
-    <label for="pen-amount">
+    <label for="pen">
       Number to order
-      <input type="number" name="pen-amount" value="0">
+      <input type="number" name="pen" data-price="0.98" value="0">
     </label>
+    <p class="collateral_item___specs"><span class="spec__name">Price</span> <span class="spec__detail price pen">$0</span></p>
   </article>
   <article class="collateral__item">
     <img src="http://myjack.jackmorton.com/media/1153829/notebook_1_250x200.jpg">
@@ -210,18 +212,23 @@ Jack pride by ordering our branded items.</p></span>
     <p class="collateral_item__description">Organize your tasks, notes, goals and dreams—all in one eye-catching, orange notebook.</p>
     <p class="collateral_item___specs"><span class="spec__name">Size</span> <span class="spec__detail">8.5" x 5.5"</span></p>
     <p class="collateral_item___specs"><span class="spec__name">Unit price</span> <span class="spec__detail">$9.74</span></p>
-    <label for="notebook-amount">
+    <label for="notebook">
       Number to order
-      <input type="number" name="notebook-amount" value="0">
+      <input type="number" name="notebook" data-price="9.74" value="0">
     </label>
+    <p class="collateral_item___specs"><span class="spec__name">Price</span> <span class="spec__detail price notebook">$0</span></p>
   </article>
   <section class="order-details">
     <h4>Order information</h4>
     <section class="order-information">
       <section class="orderer-information">
         <div class="order-field clearfix">
-          <label for="order-name">Your name</label>
+          <label for="order-name">Name</label>
           <input type="text" name="order-name">
+        </div>
+        <div class="order-field clearfix">
+          <label for="order-name">Email</label>
+          <input type="email" name="order-email">
         </div>
         <div class="order-field clearfix">
           <label for="order-office">Office</label>
@@ -265,13 +272,13 @@ Jack pride by ordering our branded items.</p></span>
     </section>
     <section class="order-total">
       <p class="total-label">Total</p>
-      <p class="total-amount">$50</p>
+      <p class="total-amount"></p>
       <input type="submit" value="Place order">
     </section>
   </section>
 </form>
 
-<a id="umbracoPreviewBadge" style="position: absolute; top: 0; right: 0; border: 0; width: 149px; height: 149px; background: url('/umbraco_client/preview/previewModeBadge.png') no-repeat;" href="/umbraco/endPreview.aspx?redir=%2f12307.aspx"><span style="display:none;">In Preview Mode - click to end</span></a>
+<!-- <a id="umbracoPreviewBadge" style="position: absolute; top: 0; right: 0; border: 0; width: 149px; height: 149px; background: url('/umbraco_client/preview/previewModeBadge.png') no-repeat;" href="/umbraco/endPreview.aspx?redir=%2f12307.aspx"><span style="display:none;">In Preview Mode - click to end</span></a> -->
 </html>
 
       </div><!-- end innerContainer -->
@@ -286,7 +293,7 @@ Jack pride by ordering our branded items.</p></span>
   <div class="container_12" id="footer">
     <div class="grid_12">
       <p class="align_right">
-        <a href="http://www.jackmorton.com/blog" target="_blank"><img src="/media/1143993/jack-blog_28x28.png" class="social-icons" border="0" alt="-" /></a>
+        <!-- <a href="http://www.jackmorton.com/blog" target="_blank"><img src="/media/1143993/jack-blog_28x28.png" class="social-icons" border="0" alt="-" /></a>
         <a href="https://www.linkedin.com/company/jack-morton-worldwide" target="_blank"><img src="/media/1143998/linkedin_28x28.png" class="social-icons" border="0" alt="-" /></a>
         <a href="http://twitter.com/jackmorton" target="_blank"><img src="/media/1144013/twitter_28x28.png" class="social-icons" border="0" alt="-" /></a>
         <a href="http://www.facebook.com/jackmortonworldwide" target="_blank"><img src="/media/1143978/facebook_28x28.png" class="social-icons" border="0" alt="-" /></a>
@@ -295,7 +302,7 @@ Jack pride by ordering our branded items.</p></span>
         <a href="http://vimeo.com/jackmortonww/videos" target="_blank"><img src="/media/1144018/vimeo_28x28.png" class="social-icons" border="0" alt="-" /></a>
         <a href="http://www.youtube.com/JackMortonWW" target="_blank"><img src="/media/1144023/youtube_28x28.png" class="social-icons" border="0" alt="-" /></a>
         <a href="http://www.pinterest.com/jackmorton" target="_blank"><img src="/media/1144003/pinterest_28x28.png" class="social-icons" border="0" alt="-" /></a>
-        <a href="https://www.google.com/+jackmorton" target="_blank"><img src="/media/1143983/googleplus_28x28.png" class="social-icons" border="0" alt="-" /></a>
+        <a href="https://www.google.com/+jackmorton" target="_blank"><img src="/media/1143983/googleplus_28x28.png" class="social-icons" border="0" alt="-" /></a> -->
       </p>
     </div>
     <br class="clear"/>
@@ -306,8 +313,9 @@ Jack pride by ordering our branded items.</p></span>
 
 
 
+    <script src="https://use.fontawesome.com/38221984a4.js" type="text/javascript"></script>
     <script src="js/order-form.js" charset="utf-8"></script>
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         new HelloBar('Go to: <a href="http://myjack.jackmorton.com">MyJack Home</a> <a href="http://hr.jackmorton.com">HR</a> <a href="http://myjack.jackmorton.com/marketing/home.aspx">Marketing Central</a>', {
             positioning: 'overlap',
             barColor: '#ff5000',
@@ -320,6 +328,6 @@ Jack pride by ordering our branded items.</p></span>
             fonts: 'FuturaLT-Bold, arial, sans-serif',
             shadow: true
         }, 1.0);
-    </script>
+    </script> -->
 </body>
 </html>

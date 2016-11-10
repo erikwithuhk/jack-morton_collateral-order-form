@@ -47,7 +47,7 @@
 
 .collateral__item input {
   box-sizing: border-box;
-  border: 2px solid #ff5000;
+  border: 2px solid #abafb3;
   font: inherit;
   font-weight: normal;
   line-height: 1;
@@ -55,6 +55,11 @@
   text-align: right;
   padding: 0.5em;
   width: 4em;
+}
+
+.collateral__item input:focus,
+.collateral__item input:hover {
+  border-color: #ff5000;
 }
 
 .collateral__item input[type=number]::-webkit-inner-spin-button,
@@ -86,12 +91,6 @@
   width: 49.5%;
 }
 
-.order-information label {
-  font-weight: bold;
-  line-height: 2.6428em;
-  margin-bottom: 1em 0;
-}
-
 .orderer-information {
   width: 100%;
 }
@@ -100,6 +99,8 @@
   clear: left;
   display: block;
   float: left;
+  font-weight: bold;
+  line-height: 2.6428em;
 }
 
 .orderer-information input,
@@ -123,9 +124,11 @@
 }
 
 .order-office-select {
-  background-color: #fff;
+  background: url('../images/dropdown-arrow.png') no-repeat right #fff;
+  background-size: contain;
   border: 1px solid #abafb3;
   float: right;
+  overflow: hidden;
   width: 20em;
 }
 
