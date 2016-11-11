@@ -220,20 +220,21 @@ Jack pride by ordering our branded items.</p></span>
   </article>
   <section class="order-details">
     <h4>Order information</h4>
+    <p>All fields are required</p>
     <section class="order-information">
       <section class="orderer-information">
         <div class="order-field clearfix">
           <label for="name">Name</label>
-          <input type="text" name="name">
+          <input type="text" name="name" required>
         </div>
         <div class="order-field clearfix">
           <label for="_replyto">Email</label>
-          <input type="email" name="_replyto">
+          <input type="email" name="_replyto" required>
         </div>
         <div class="order-field clearfix">
           <label for="office">Office</label>
           <div class="office-select clearfix">
-            <select name="office">
+            <select name="office" required>
               <option selected disabled="disabled">Select your office</option>
               <option value="Boston">Boston</option>
               <option value="Chicago">Chicago</option>
@@ -258,7 +259,7 @@ Jack pride by ordering our branded items.</p></span>
           <label for="job-number">
             Job #
           </label>
-          <input type="text" name="job-number">
+          <input type="text" name="job-number" required>
         </div>
       </section>
       <label for="shipping">
@@ -269,15 +270,24 @@ Jack pride by ordering our branded items.</p></span>
         <article>2&#8211;3 days <input type="radio" name="shipping" value="2–3-day shipping" checked></article>
         <article>3&#8211;5 days <input type="radio" name="shipping" value="3–5 day shipping"></article>
       </div>
+      <section class="orderer-information">
+        <div class="order-field clearfix">
+          <label for="notes">Notes</label>
+          <textarea name="notes"></textarea
+        </div>
+      </section>
     </section>
     <section class="order-total">
       <p class="total-label">Total</p>
-      <p type="text" class="total-amount"></p>
+      <p class="total-amount"></p>
+      <input type="hidden" class="total-amount-input" name="total-amount"></input>
       <input type="submit" value="Place order">
+      <p class="contact"><a href="mailto:experience@jackmorton.com?subject=Jack-cessories">Contact the Brand Marketing team</a> for any questions about your order or Jack-cessories.</p>
+      <p>* The Brand Marketing team will confirm the cost of shipping before sending out your order.</p>
     </section>
   </section>
   <input type="hidden" name="_subject" value="New collateral order" />
-  <input type="hidden" name="_next" value="//myjack.jackmorton.com/13133.aspx" />
+  <input type="hidden" name="_next" value="http://myjack.jackmorton.com/13133.aspx" />
 </form>
 
 <!-- <a id="umbracoPreviewBadge" style="position: absolute; top: 0; right: 0; border: 0; width: 149px; height: 149px; background: url('/umbraco_client/preview/previewModeBadge.png') no-repeat;" href="/umbraco/endPreview.aspx?redir=%2f12307.aspx"><span style="display:none;">In Preview Mode - click to end</span></a> -->

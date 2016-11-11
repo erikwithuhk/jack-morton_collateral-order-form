@@ -4,17 +4,24 @@ function OrderForm() {
 
   this.renderTotal = function() {
     var $totalAmountNode = $('.total-amount');
-    $totalAmountNode.html('$' + this.total);
+    $totalAmountNode.html('$' + this.total.toFixed(2) + ' + shipping*');
+    var $totalInputNode = $('.total-amount-input');
+    $totalInputNode.value = this.total;
+    console.log($totalInputNode.value);
   }
   this.calculateTotal = function() {
-    var $itemPrices = $('.price');
-    console.log($itemPrices);
-    // var totalPrice = 0;
-    // $collateralItemInputs.each(function(idx, input) {
-    //   totalPrice += (input.value * input.getAttribute('data-price'));
-    // });
-    // this.total = totalPrice.toFixed(2);
-    // this.renderTotal();
+    var $itemPriceNodes = $('.price');
+    var subtotals = [];
+    $itemPriceNodes.each(function(index, node) {
+      var priceString = node.innerHTML;
+      var priceNumber = parseFloat(priceString.slice(1));
+      subtotals.push(priceNumber);
+    });
+    var total = subtotals.reduce(function(prev, next) {
+      return prev + next;
+    });
+    this.total = total;
+    this.renderTotal();
   }
   this.updatePrice = function(target) {
     var unitPrice = target.getAttribute('data-price');
@@ -41,7 +48,6 @@ function OrderForm() {
   }
 
   this.setCollateralInputListener();
-  // this.setSubmitListener();
 }
 
 

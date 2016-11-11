@@ -104,6 +104,7 @@
 }
 
 .orderer-information input,
+.orderer-information textarea,
 .office-select select {
   border: 1px solid #abafb3;
   border-radius: 0;
@@ -124,7 +125,7 @@
 }
 
 .office-select {
-  background: url('../images/dropdown-arrow.png') no-repeat right #fff;
+  background: url('http://myjack.jackmorton.com/media/1163052/dropdown-arrow.png') no-repeat right #fff;
   background-size: contain;
   border: 1px solid #abafb3;
   float: right;
@@ -146,8 +147,9 @@
 
 .order-total {
   float: right;
-  width: 25%;
-  text-align: right;
+  margin-top: 1em;
+  text-align: center;
+  width: 45%;
 }
 
 .order-total label {
@@ -158,6 +160,10 @@
   margin: 0.5em 0;
 }
 
+.order-total a {
+  color: #ff5000;
+}
+
 .total-label,
 .total-amount {
   font-size: 1.25rem;
@@ -166,4 +172,8 @@
 .total-label {
   margin-top: rem;
   font-weight: bold;
+}
+
+.contact {
+  margin-top: 2em;
 }
