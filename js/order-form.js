@@ -51,4 +51,4 @@ function OrderForm() {
 
 
 var orderForm = new OrderForm();
-orderForm.renderTotal();
+orderForm.calculateTotal();
