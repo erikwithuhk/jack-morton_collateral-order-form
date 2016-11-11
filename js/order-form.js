@@ -7,7 +7,6 @@ function OrderForm() {
     $totalAmountNode.html('$' + this.total.toFixed(2) + ' + shipping*');
     var $totalInputNode = $('.total-amount-input');
     $totalInputNode.value = this.total;
-    console.log($totalInputNode.value);
   }
   this.calculateTotal = function() {
     var $itemPriceNodes = $('.price');
