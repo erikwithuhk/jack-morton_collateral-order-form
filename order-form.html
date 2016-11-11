@@ -223,59 +223,61 @@ Jack pride by ordering our branded items.</p></span>
     <section class="order-information">
       <section class="orderer-information">
         <div class="order-field clearfix">
-          <label for="order-name">Name</label>
-          <input type="text" name="order-name">
+          <label for="name">Name</label>
+          <input type="text" name="name">
         </div>
         <div class="order-field clearfix">
-          <label for="order-name">Email</label>
-          <input type="email" name="order-email">
+          <label for="_replyto">Email</label>
+          <input type="email" name="_replyto">
         </div>
         <div class="order-field clearfix">
-          <label for="order-office">Office</label>
-          <div class="order-office-select clearfix">
-            <select name="order-office">
+          <label for="office">Office</label>
+          <div class="office-select clearfix">
+            <select name="office">
               <option selected disabled="disabled">Select your office</option>
-              <option value="boston">Boston</option>
-              <option value="chicago">Chicago</option>
-              <option value="detroit">Detroit</option>
-              <option value="dubai">Dubai</option>
-              <option value="dusseldorf">Düsseldorf</option>
-              <option value="hong-kong">Hong Kong</option>
-              <option value="london">London</option>
-              <option value="los-angeles">Los Angeles</option>
-              <option value="melbourne">Melbourne</option>
-              <option value="new-york">New York</option>
-              <option value="princeton">Princeton</option>
-              <option value="san-francisco">San Francisco</option>
-              <option value="seoul">Seoul</option>
-              <option value="shanghai">Shanghai</option>
-              <option value="singapore">Singapore</option>
-              <option value="sydney">Sydney</option>
+              <option value="Boston">Boston</option>
+              <option value="Chicago">Chicago</option>
+              <option value="Detroit">Detroit</option>
+              <option value="Dubai">Dubai</option>
+              <option value="Düsseldorf">Düsseldorf</option>
+              <option value="Hong Kong">Hong Kong</option>
+              <option value="London">London</option>
+              <option value="Los Angeles">Los Angeles</option>
+              <option value="Melbourne">Melbourne</option>
+              <option value="New York">New York</option>
+              <option value="Princeton">Princeton</option>
+              <option value="San Francisco">San Francisco</option>
+              <option value="Seoul">Seoul</option>
+              <option value="Shanghai">Shanghai</option>
+              <option value="Singapore">Singapore</option>
+              <option value="Sydney">Sydney</option>
             </select>
           </div>
         </div>
         <div class="order-field clearfix">
-          <label for="order-job-number">
+          <label for="job-number">
             Job #
           </label>
-          <input type="text" name="order-job-number">
+          <input type="text" name="job-number">
         </div>
       </section>
-      <label for="order-shipping">
+      <label for="shipping">
         Shipping
       </label>
       <div class="shipping-options">
-        <article>1 day <input type="radio" name="order-shipping" value="shipping-1-day"></article>
-        <article>2&#8211;3 days <input type="radio" name="order-shipping" value="shipping-2-day" checked></article>
-        <article>3&#8211;5 days <input type="radio" name="order-shipping" value="shipping-3-day"></article>
+        <article>1 day <input type="radio" name="shipping" value="1-day shipping"></article>
+        <article>2&#8211;3 days <input type="radio" name="shipping" value="2–3-day shipping" checked></article>
+        <article>3&#8211;5 days <input type="radio" name="shipping" value="3–5 day shipping"></article>
       </div>
     </section>
     <section class="order-total">
       <p class="total-label">Total</p>
-      <p class="total-amount"></p>
+      <p type="text" class="total-amount"></p>
       <input type="submit" value="Place order">
     </section>
   </section>
+  <input type="hidden" name="_subject" value="New collateral order" />
+  <input type="hidden" name="_next" value="//myjack.jackmorton.com/13133.aspx" />
 </form>
 
 <!-- <a id="umbracoPreviewBadge" style="position: absolute; top: 0; right: 0; border: 0; width: 149px; height: 149px; background: url('/umbraco_client/preview/previewModeBadge.png') no-repeat;" href="/umbraco/endPreview.aspx?redir=%2f12307.aspx"><span style="display:none;">In Preview Mode - click to end</span></a> -->

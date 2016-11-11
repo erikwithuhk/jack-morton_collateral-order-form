@@ -41,7 +41,7 @@ function OrderForm() {
   }
 
   this.setCollateralInputListener();
-  this.setSubmitListener();
+  // this.setSubmitListener();
 }
 
 

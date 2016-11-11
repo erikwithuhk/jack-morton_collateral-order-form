@@ -104,7 +104,7 @@
 }
 
 .orderer-information input,
-.order-office-select select {
+.office-select select {
   border: 1px solid #abafb3;
   border-radius: 0;
   box-sizing: border-box;
@@ -123,7 +123,7 @@
   margin: 1em 0;
 }
 
-.order-office-select {
+.office-select {
   background: url('../images/dropdown-arrow.png') no-repeat right #fff;
   background-size: contain;
   border: 1px solid #abafb3;
@@ -132,14 +132,14 @@
   width: 20em;
 }
 
-.order-office-select select {
+.office-select select {
   -webkit-appearance: none;
   background: transparent;
   border: none;
   font: inherit;
 }
 
-.order-office-select select:disabled {
+.office-select select:disabled {
   color: #abafb3;
   background-color: #abafb3;
 }
