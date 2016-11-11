@@ -2,7 +2,7 @@ function OrderForm() {
   this.collateralForm = $('.collateral-form');
   this.total = 0;
 
-  this.initializePrices() {
+  this.initializePrices = function() {
     var $collateralItemInputs = $('.collateral__item input');
     var that = this;
     $collateralItemInputs.each(function(idx, input) {
@@ -56,6 +56,5 @@ function OrderForm() {
   this.setCollateralInputListener();
 }
 
-
 var orderForm = new OrderForm();
-orderForm.calculateTotal();
+orderForm.initializePrices();
