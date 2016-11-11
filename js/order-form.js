@@ -2,6 +2,13 @@ function OrderForm() {
   this.collateralForm = $('.collateral-form');
   this.total = 0;
 
+  this.initializePrices() {
+    var $collateralItemInputs = $('.collateral__item input');
+    var that = this;
+    $collateralItemInputs.each(function(idx, input) {
+      that.updatePrice(input);
+    });
+  }
   this.renderTotal = function() {
     var $totalAmountNode = $('.total-amount');
     $totalAmountNode.html('$' + this.total.toFixed(2) + ' + shipping*');
